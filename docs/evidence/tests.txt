@@ -1,0 +1,63 @@
+
+> likelion-14th-jwt-practice@1.0.0 test
+> node --test
+
+TAP version 13
+# ◇ injected env (2) from .env
+# Subtest: HS256 signature, four user claims, exact 600-second lifetime and excluded fields
+ok 1 - HS256 signature, four user claims, exact 600-second lifetime and excluded fields
+  ---
+  duration_ms: 6.1449
+  type: 'test'
+  ...
+# Subtest: unknown username and case mismatch return 404
+ok 2 - unknown username and case mismatch return 404
+  ---
+  duration_ms: 0.265
+  type: 'test'
+  ...
+# Subtest: missing, blank and non-string username return 400
+ok 3 - missing, blank and non-string username return 400
+  ---
+  duration_ms: 0.3706
+  type: 'test'
+  ...
+# Subtest: missing signing secret returns 500
+ok 4 - missing signing secret returns 500
+  ---
+  duration_ms: 0.1688
+  type: 'test'
+  ...
+# Subtest: upstream HTTP failure returns 502
+ok 5 - upstream HTTP failure returns 502
+  ---
+  duration_ms: 0.1257
+  type: 'test'
+  ...
+# Subtest: network failure returns 502
+ok 6 - network failure returns 502
+  ---
+  duration_ms: 0.1505
+  type: 'test'
+  ...
+# Subtest: invalid upstream JSON or non-array response returns 502
+ok 7 - invalid upstream JSON or non-array response returns 502
+  ---
+  duration_ms: 0.1694
+  type: 'test'
+  ...
+# Subtest: HTTP route validates missing bodies and malformed JSON
+ok 8 - HTTP route validates missing bodies and malformed JSON
+  ---
+  duration_ms: 225.7208
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 426.2478

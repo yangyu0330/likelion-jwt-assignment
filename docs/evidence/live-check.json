@@ -1,0 +1,67 @@
+{
+  "verifiedAt": "2026-10-24T14:48:18.263Z",
+  "results": [
+    {
+      "request": {
+        "username": "Bret"
+      },
+      "status": 200,
+      "signatureVerified": true,
+      "payload": {
+        "sub": "1",
+        "username": "Bret",
+        "name": "Leanne Graham",
+        "email": "Sincere@april.biz",
+        "iat": 1792853298,
+        "exp": 1792853898
+      }
+    },
+    {
+      "request": {
+        "username": "unknown"
+      },
+      "status": 404,
+      "response": {
+        "message": "사용자 없음"
+      }
+    },
+    {
+      "request": {
+        "username": "bret"
+      },
+      "status": 404,
+      "response": {
+        "message": "사용자 없음"
+      }
+    },
+    {
+      "request": {},
+      "status": 400,
+      "response": {
+        "message": "username 입력 필요"
+      }
+    },
+    {
+      "request": {
+        "username": 123
+      },
+      "status": 400,
+      "response": {
+        "message": "username 입력 필요"
+      }
+    },
+    {
+      "source": "browser screenshot token",
+      "signatureVerified": true,
+      "lifetimeSeconds": 600,
+      "payload": {
+        "sub": "1",
+        "username": "Bret",
+        "name": "Leanne Graham",
+        "email": "Sincere@april.biz",
+        "iat": 1792853244,
+        "exp": 1792853844
+      }
+    }
+  ]
+}
